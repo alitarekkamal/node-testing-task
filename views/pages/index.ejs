@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <h1 style='margin:50px;'>this is the main page for the app</h1>
+    <h2 style='margin:80px;'> you can choise the section for testing</h2>
+    <div style='margin-left:55px;'>
+      <ul><strong>
+        <%for(var i=0; i<nav.length; i++) {%>
+          <li style='display: inline; margin:20px;'>
+            <a href="<%=nav[i]%>" style='text-decoration: none; color:black;'><%=nav[i]%></a>
+          </li>
+        <%}%></strong>
+      </ul>
+    </div>
+
+    <div style='padding-top:150px;'>
+    <ul><strong>
+    <%for(var i=0; i<footer.length; i++) {%>
+      <li style='display: inline; margin:20px;'>
+        <%=footer[i]%>
+      </li>
+    <%}%>
+  </ul></strong>
+    </div>
+
+  </body>
+</html>

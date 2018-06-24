@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%=title%></title>
+  </head>
+  <body>
+
+      <ul>
+        <%for(var i=0; i<nav.length; i++) {%>
+          <li style='display: inline; margin:20px;'>
+            <a href="<%=nav[i]%>" style='text-decoration: none; color:black;'><%=nav[i]%></a>
+          </li>
+        <%}%>
+      </ul>
+      <div style='margin:100px;'>
+        <h1><%=body.one%></h1>
+        <h2><%=body.two%></h2>
+        <h3><%=body.three%></h3>
+        <p><%=body.prag1%></p>
+        <br />
+        <p><%=body.prag2%></p>
+      </div>
+       
+  </body>
+</html>
